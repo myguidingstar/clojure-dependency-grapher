@@ -7,14 +7,14 @@ so you can run dot on it to get a nice svg out.
 
 # Installation:
 ## Leiningen 1.x
-
-% lein plugin install org.clojars.kurtharriger/lein-depgraph 0.1.0
-
+```
+% lein plugin install lein-depgraph 0.1.0
+```
 ## Leiningen 2.x
 
 add it to ~/.lein/profiles.clj:
 ```clojure
-{:user {:plugins [[lein-depgraph "0.1.1"]]}}
+{:user {:plugins [[lein-depgraph "0.1.0"]]}}
 ```
 
 ## Usage:
