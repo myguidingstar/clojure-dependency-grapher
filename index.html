@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Clojure-dependency-grapher : script reads the ns forms from clojure files in a directory and writes out a graph of dependences" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Clojure-dependency-grapher</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/myguidingstar/clojure-dependency-grapher">View on GitHub</a>
+
+          <h1 id="project_title">Clojure-dependency-grapher</h1>
+          <h2 id="project_tagline">script reads the ns forms from clojure files in a directory and writes out a graph of dependences</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/myguidingstar/clojure-dependency-grapher/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/myguidingstar/clojure-dependency-grapher/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Lein-depgraph</h1>
+
+<p>trawls a directory of .clj files for namespace forms, and outputs a graph of
+the information from those forms. the graph is in the graphviz dot language,
+so you can run dot on it to get a nice svg out.</p>
+
+<h1>Installation:</h1>
+
+<h2>Leiningen 1.x</h2>
+
+<pre><code>% lein plugin install lein-depgraph 0.1.0
+</code></pre>
+
+<h2>Leiningen 2.x</h2>
+
+<p>add it to ~/.lein/profiles.clj:</p>
+
+<div class="highlight"><pre><span class="p">{</span><span class="ss">:user</span> <span class="p">{</span><span class="ss">:plugins</span> <span class="p">[[</span><span class="nv">lein-depgraph</span> <span class="s">"0.1.0"</span><span class="p">]]}}</span>
+</pre></div>
+
+<h2>Usage:</h2>
+
+<pre><code>% lein depgraph
+</code></pre>
+
+<p>then open newly-created .svg</p>
+
+<h2>Dependencies:</h2>
+
+<p>Your system should have graphviz installed. <code>dot</code>  must be on your
+ path to convert the .dot file to .svg file.</p>
+
+<p>For OS X users, graphviz can be installed with homebrew</p>
+
+<pre><code>% brew install graphviz
+</code></pre>
+
+<h2>License</h2>
+
+<p>Licensed under the EPL, same as Clojure and Leiningen.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Clojure-dependency-grapher maintained by <a href="https://github.com/myguidingstar">myguidingstar</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
